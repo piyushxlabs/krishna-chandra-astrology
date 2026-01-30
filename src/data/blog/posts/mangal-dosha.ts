@@ -1,12 +1,12 @@
 export const article11 = {
-    slug: "mangal-dosha-upay",
-    title: "Mangal Dosha Kya Hai Aur Iske Upay",
-    excerpt: "High energy, aggression aur shaadi mein deri? Mangal dosha ke symptoms aur remedies ko detail mein samjhein.",
-    category: "Relationships",
-    date: "2026-03-20",
-    readTime: "6 min read",
-    image: "/assets/images/blog/mangal-dosh.png",
-    content: `
+  slug: "mangal-dosha-upay",
+  title: "Mangal Dosha Kya Hai Aur Iske Upay",
+  excerpt: "High energy, aggression aur shaadi mein deri? Mangal dosha ke symptoms aur remedies ko detail mein samjhein.",
+  category: "Relationships",
+  date: "2026-03-20",
+  readTime: "6 min read",
+  image: "/assets/images/blog/mangal-dosh-new.png",
+  content: `
    <p class="lead">Mangal Dosh (Kuj Dosh) un topics mein se hai jis par sabse zyada galatfehmiyan (misconceptions) hain. "Manglik hai toh shadi toot jayegi" - ye aadha sach hai. Pura sach kya hai?</p>
 
    <h2>Mangal Dosh Kab Banta Hai?</h2>
@@ -46,9 +46,9 @@ export const article11 = {
    <h2>Conclusion</h2>
    <p>Mangal Dosh koi shap (curse) nahi hai, ye ek vishesh urja hai. Sahi partner aur sahi guidance ke saath Manglik log sabse loyal aur protective partners bante hain.</p>
   `,
-    author: {
-        name: "Pandit Krishna Chandra Jaguri",
-        bio: "Removing fears and providing solutions for Mangal Dosh.",
-        image: "/assets/images/hero/about-hero.png"
-    }
+  author: {
+    name: "Pandit Krishna Chandra Jaguri",
+    bio: "Removing fears and providing solutions for Mangal Dosh.",
+    image: "/assets/images/hero/about-hero.png"
+  }
 };

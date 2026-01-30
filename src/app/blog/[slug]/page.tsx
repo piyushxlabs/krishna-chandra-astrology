@@ -83,16 +83,16 @@ export default async function BlogPostPage({ params }: PageProps) {
                         priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 text-white">
-                        <Container>
-                            <FadeIn>
+                    <div className="absolute inset-0 flex items-center justify-center p-6 md:p-12 text-white">
+                        <Container className="text-center">
+                            <FadeIn className="flex flex-col items-center">
                                 <span className="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
                                     {post.category}
                                 </span>
-                                <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight max-w-4xl drop-shadow-lg">
+                                <h1 className="text-3xl md:text-5xl lg:text-7xl font-serif font-bold mb-8 leading-tight max-w-4xl drop-shadow-2xl mx-auto">
                                     {post.title}
                                 </h1>
-                                <div className="flex flex-wrap items-center gap-6 text-sm md:text-base text-white/90">
+                                <div className="flex flex-wrap items-center justify-center gap-6 text-sm md:text-base text-white/90 bg-black/20 backdrop-blur-sm px-6 py-2 rounded-full border border-white/10">
                                     <div className="flex items-center gap-2">
                                         <User size={18} />
                                         <span>{post.author.name}</span>

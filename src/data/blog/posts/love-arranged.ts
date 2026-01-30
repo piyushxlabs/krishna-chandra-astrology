@@ -1,12 +1,12 @@
 export const article9 = {
-    slug: "love-vs-arranged-marriage",
-    title: "Love Marriage Ya Arranged - Kundli Kya Kehti Hai",
-    excerpt: "Kya aapki kismat mein pyaar hai ya parivaar ki pasand? Kundli ke wo yog jo batate hain ki aapki shaadi kaise hogi.",
-    category: "Relationships",
-    date: "2026-03-08",
-    readTime: "5 min read",
-    image: "/assets/images/blog/love-arranged.png",
-    content: `
+  slug: "love-vs-arranged-marriage",
+  title: "Love Marriage Ya Arranged - Kundli Kya Kehti Hai",
+  excerpt: "Kya aapki kismat mein pyaar hai ya parivaar ki pasand? Kundli ke wo yog jo batate hain ki aapki shaadi kaise hogi.",
+  category: "Relationships",
+  date: "2026-03-08",
+  readTime: "5 min read",
+  image: "/assets/images/blog/love-arranged-new.png",
+  content: `
    <p class="lead">Har yuva ke mann mein ye sawal kabhi na kabhi aata hai: "Meri shaadi kaise hogi? Love ya Arranged?" Astrology mein iska spasht sanket milta hai. 5th house aur 7th house ka connection hi ye raaz kholta hai.</p>
 
    <h2>Understanding the Houses</h2>
@@ -44,9 +44,9 @@ export const article9 = {
    <h2>Conclusion</h2>
    <p>Chahe Love ho ya Arranged, zaroori ye hai ki shaadi safal ho. Kundli ye bata sakti hai ki aapke liye kaunsa raasta zyada sukhad rahega. Agar aap confusion mein hain, toh kundli analysis se clarity lein.</p>
   `,
-    author: {
-        name: "Pandit Krishna Chandra Jaguri",
-        bio: "Uniting hearts with the help of stars.",
-        image: "/assets/images/hero/about-hero.png"
-    }
+  author: {
+    name: "Pandit Krishna Chandra Jaguri",
+    bio: "Uniting hearts with the help of stars.",
+    image: "/assets/images/hero/about-hero.png"
+  }
 };

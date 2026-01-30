@@ -5,7 +5,7 @@ export const article12 = {
     category: "Spiritual & Travel",
     date: "2026-04-05",
     readTime: "7 min read",
-    image: "/assets/images/blog/navratri-special.png",
+    image: "/assets/images/blog/navratri-special-new.png",
     content: `
    <p class="lead">Navratri shakti ki upasana ka parv hai. Lekin kya aap jaante hain ki Navratri ke 9 din humare kundli ke 9 grahon (planets) ko bhi represent karte hain? Har Devi ka sambandh ek vishesh grah se hai.</p>
 

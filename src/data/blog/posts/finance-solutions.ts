@@ -1,12 +1,12 @@
 export const article8 = {
-    slug: "financial-problems-astrology",
-    title: "Financial Problems Ka Astrological Solution",
-    excerpt: "Paisa aata hai par tikta nahi? Karz (loan) badhta ja raha hai? Jaaniye wealth ko attract karne ke astrological secrets.",
-    category: "Career & Finance",
-    date: "2026-03-02",
-    readTime: "6 min read",
-    image: "/assets/images/blog/financial-growth.png",
-    content: `
+  slug: "financial-problems-astrology",
+  title: "Financial Problems Ka Astrological Solution",
+  excerpt: "Paisa aata hai par tikta nahi? Karz (loan) badhta ja raha hai? Jaaniye wealth ko attract karne ke astrological secrets.",
+  category: "Career & Finance",
+  date: "2026-03-02",
+  readTime: "6 min read",
+  image: "/assets/images/blog/financial-growth-new.png",
+  content: `
    <p class="lead">Har koi chahta hai ki Lakshmi unke ghar mein waas kare. Lekin kai baar kadi mehnat ke baad bhi paisa nahi tikta ya karz badhta jaata hai. Astrology mein Dhan (Wealth) ke liye kuch specific houses aur planets zimmedar hote hain.</p>
 
    <h2>Dhan Yog aur Daridra Yog</h2>
@@ -49,9 +49,9 @@ export const article8 = {
    <h2>Conclusion</h2>
    <p>Paisa ek energy hai. Apne grahon ko balance karke aur sahi disha mein prayas karke aap wealth ko attract kar sakte hain.</p>
   `,
-    author: {
-        name: "Pandit Krishna Chandra Jaguri",
-        bio: "Guiding you towards financial stability through cosmic wisdom.",
-        image: "/assets/images/hero/about-hero.png"
-    }
+  author: {
+    name: "Pandit Krishna Chandra Jaguri",
+    bio: "Guiding you towards financial stability through cosmic wisdom.",
+    image: "/assets/images/hero/about-hero.png"
+  }
 };

@@ -1,12 +1,12 @@
 export const article10 = {
-    slug: "saturn-transit-2026",
-    title: "Saturn Transit 2026 - Kis Rashi Par Kya Asar",
-    excerpt: "Shani Dev ka Kumbh se Meen rashi mein pravesh ek badi khagoliya ghatna hai. Jaaniye Sade Sati aur Dhaiya ka naya ganit.",
-    category: "Planetary Movements",
-    date: "2026-03-15",
-    readTime: "8 min read",
-    image: "/assets/images/blog/saturn-transit.png",
-    content: `
+  slug: "saturn-transit-2026",
+  title: "Saturn Transit 2026 - Kis Rashi Par Kya Asar",
+  excerpt: "Shani Dev ka Kumbh se Meen rashi mein pravesh ek badi khagoliya ghatna hai. Jaaniye Sade Sati aur Dhaiya ka naya ganit.",
+  category: "Planetary Movements",
+  date: "2026-03-15",
+  readTime: "8 min read",
+  image: "/assets/images/blog/saturn-transit-new.png",
+  content: `
    <p class="lead">Shani (Saturn) ko "Karm phal data" kaha jaata hai. Wo dand nahi dete, wo nyaay (justice) karte hain. 2026 mein Shani ka Rashi Parivartan (Transit) bahut logon ki life change karne wala hai.</p>
 
    <h2>Transition Details</h2>
@@ -42,9 +42,9 @@ export const article10 = {
    <h2>Conclusion</h2>
    <p>Shani se darne ki zaroorat nahi hai. Agar aap sahi raaste par hain, toh Shani aapko wo unchayi denge jo koi aur grah nahi de sakta. "Shani Runk ko Raja bana dete hain."</p>
   `,
-    author: {
-        name: "Pandit Krishna Chandra Jaguri",
-        bio: "Helping you navigate the tides of Saturn's Karma.",
-        image: "/assets/images/hero/about-hero.png"
-    }
+  author: {
+    name: "Pandit Krishna Chandra Jaguri",
+    bio: "Helping you navigate the tides of Saturn's Karma.",
+    image: "/assets/images/hero/about-hero.png"
+  }
 };
