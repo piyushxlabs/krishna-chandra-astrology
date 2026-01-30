@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Colors */
+  --color-primary: #C9954D;
+  --color-primary-hover: #B8843C;
+  --color-primary-text: #FAF6F1;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-secondary: #4A3B2F;
+  --color-secondary-hover: #3A2E24;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-accent: #C67C5C;
+  --color-accent-alt: #8B4854;
+
+  --color-background: #FAF6F1;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F5EFE6;
+  --color-border: #E8D5B7;
+
+  --color-text-primary: #2D2520;
+  --color-text-secondary: #6B5E54;
+  --color-text-tertiary: #9C8E82;
+
+  --color-success: #6B8E4E;
+  --color-error: #C65D5D;
+  --color-warning: #D9A566;
+
+  /* Typography */
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+
+  /* Animation */
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+  --animate-slide-up: slide-up 0.6s ease-out forwards;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Base Styles */
+@layer base {
+  body {
+    @apply text-text-primary bg-background;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+/* Utility classes for smooth scrolling on anchor links */
+html {
+  scroll-behavior: smooth;
 }
