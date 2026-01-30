@@ -3,7 +3,7 @@ import { IntroHero } from "@/components/sections/about/IntroHero";
 import { Journey } from "@/components/sections/about/Journey";
 import { Approach } from "@/components/sections/about/Approach";
 import { LocalTrust } from "@/components/sections/about/LocalTrust";
-import { CTASection } from "@/components/sections/about/CTASection";
+import { PremiumCTA } from "@/components/sections/shared/PremiumCTA";
 
 export const metadata: Metadata = {
     title: "About Pandit Krishna Chandra Jaguri | Vedic Astrologer Dehradun",
@@ -25,7 +25,10 @@ export default function AboutPage() {
             <Journey />
             <Approach />
             <LocalTrust />
-            <CTASection />
+            <PremiumCTA
+                title="Chaliye discuss karein aapki janampatri"
+                subtitle="Ek consultation se shuru karte hain. Aapke sawalon ke liye main yahan hoon."
+            />
         </main>
     );
 }

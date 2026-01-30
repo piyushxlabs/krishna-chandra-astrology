@@ -14,7 +14,7 @@ const STATS = [
     },
     {
         icon: Star,
-        label: "4 Specialized Services",
+        label: "5 Specialized Services",
         sub: "Tailored Guidance"
     },
     {

@@ -5,7 +5,7 @@ import { AboutIntro } from "@/components/sections/home/AboutIntro";
 import { ServicesOverview } from "@/components/sections/home/ServicesOverview";
 import { WhyChoose } from "@/components/sections/home/WhyChoose";
 import { TestimonialsPreview } from "@/components/sections/home/TestimonialsPreview";
-import { CTABlock } from "@/components/sections/home/CTABlock";
+import { PremiumCTA } from "@/components/sections/shared/PremiumCTA";
 import BlogPreview from "../components/sections/home/BlogPreview";
 
 export const metadata: Metadata = {
@@ -31,7 +31,10 @@ export default function Home() {
       <ServicesOverview />
       <WhyChoose />
       <TestimonialsPreview />
-      <CTABlock />
+      <PremiumCTA
+        title="Ready hain apni janampatri samajhne ke liye?"
+        subtitle="Aaj hi contact karein aur apne life ke important questions ka jawab paayein."
+      />
       <BlogPreview />
     </main>
   );

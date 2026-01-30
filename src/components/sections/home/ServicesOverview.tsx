@@ -6,7 +6,7 @@ import { FadeIn } from "@/components/motion/FadeIn";
 import { Card, CardContent, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { SERVICE_LIST } from "@/lib/utils/constants";
-import { ScrollText, Search, Phone, Compass } from "lucide-react";
+import { ScrollText, Search, Phone, Compass, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 const ICONS = {
@@ -14,6 +14,7 @@ const ICONS = {
     search: Search,
     users: Phone,
     compass: Compass,
+    sparkles: Sparkles,
 };
 
 export function ServicesOverview() {
@@ -31,7 +32,7 @@ export function ServicesOverview() {
                     </FadeIn>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6">
                     {SERVICE_LIST.map((service, idx) => {
                         const Icon = ICONS[service.icon as keyof typeof ICONS];
                         return (

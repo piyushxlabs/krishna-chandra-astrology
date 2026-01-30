@@ -96,5 +96,29 @@ export const SERVICES_DATA = [
         ],
         imageSrc: "/assets/images/services/guidance.png",
         align: "right" as const
+    },
+    {
+        id: "puja-path",
+        title: "Puja Path & Rituals",
+        description: "Ghar ki shanti aur dosh nivaran ke liye vishesh puja. Har tarah ke sanskar aur anushthan sampann karayein.",
+        scenarios: [
+            "Grah Shanti Puja",
+            "Vastu Shanti Puja",
+            "Mangal Dosh Nivaran",
+            "Navagraha Shanti"
+        ],
+        includes: [
+            "Samagri list preparation",
+            "Vidhivat Vedic mantra chant",
+            "Complete ritual execution",
+            "Prasad distribution guidance"
+        ],
+        process: [
+            "Consultation for Muhurat",
+            "Samagri arrangement",
+            "Puja execution at home/temple",
+            "Final blessings"
+        ],
+        imageSrc: "/assets/images/services/puja-path.png"
     }
 ];

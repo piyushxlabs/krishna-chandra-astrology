@@ -51,5 +51,12 @@ export const SERVICE_LIST = [
         description: "Detailed future predictions and decision-making support.",
         icon: "compass",
         href: "/services#future-guidance",
+    },
+    {
+        id: "puja-path",
+        title: "Puja Path & Rituals",
+        description: "Special vedic rituals for home peace, dosha removal, and sanskars.",
+        icon: "sparkles",
+        href: "/services#puja-path",
     }
 ];

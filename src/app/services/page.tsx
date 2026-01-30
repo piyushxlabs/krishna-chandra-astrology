@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { ServicesIntro } from "@/components/sections/services/ServicesIntro";
 import { ServiceDetail } from "@/components/sections/services/ServiceDetail";
 import { GeneralInfo } from "@/components/sections/services/GeneralInfo";
-import { ServicesCTA } from "@/components/sections/services/ServicesCTA";
+import { PremiumCTA } from "@/components/sections/shared/PremiumCTA";
 import { SERVICES_DATA } from "@/data/service-data";
 
 export const metadata: Metadata = {
@@ -38,7 +38,11 @@ export default function ServicesPage() {
                 ))}
             </div>
             <GeneralInfo />
-            <ServicesCTA />
+            <PremiumCTA
+                title="Confused kaunsi service choose karein?"
+                subtitle="Humein message karein, hum aapki situation samajh kar sahi guidance denge."
+                showSecondaryButton={false}
+            />
         </main>
     );
 }
