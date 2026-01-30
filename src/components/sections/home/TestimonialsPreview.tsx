@@ -15,7 +15,7 @@ const sectionVariants = {
     visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 0.8, ease: [0.4, 0.0, 0.2, 1] },
+        transition: { duration: 0.8, ease: [0.4, 0.0, 0.2, 1] as const },
     },
 };
 
@@ -27,7 +27,7 @@ const cardVariants = {
         scale: 1,
         transition: {
             duration: 0.7,
-            ease: [0.34, 1.56, 0.64, 1],
+            ease: [0.34, 1.56, 0.64, 1] as const,
         },
     },
 };
@@ -38,7 +38,7 @@ const floatingVariants = {
         transition: {
             duration: 6,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: "easeInOut" as const,
         },
     },
 };
@@ -84,7 +84,7 @@ export function TestimonialsPreview() {
                             whileHover={{
                                 y: -16,
                                 scale: 1.03,
-                                transition: { duration: 0.4, ease: [0.34, 1.56, 0.64, 1] }
+                                transition: { duration: 0.4, ease: [0.34, 1.56, 0.64, 1] as const }
                             }}
                             className="group relative"
                         >
