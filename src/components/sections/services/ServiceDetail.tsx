@@ -34,9 +34,25 @@ export function ServiceDetail({
     return (
         <Section id={id} className={cn("py-20", align === "right" ? "bg-[#FAF6F1]" : "bg-white")}>
             <Container>
-                <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+                <div className={cn("flex flex-col lg:gap-20 gap-12", align === "right" ? "lg:flex-row" : "lg:flex-row-reverse")}>
+                    {/* Visual Side (Placeholder for now until images generated) */}
+                    <div className="w-full lg:w-1/2 flex items-center justify-center">
+                        <FadeIn delay={0.2} className="w-full">
+                            <div className="relative aspect-square lg:aspect-[4/5] rounded-2xl overflow-hidden bg-secondary/5 border border-border shadow-lg flex items-center justify-center">
+                                {imageSrc ? (
+                                    <img src={imageSrc} alt={title} className="w-full h-full object-cover" />
+                                ) : (
+                                    <div className="text-center p-8">
+                                        <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto mb-4 animate-pulse" />
+                                        <p className="text-text-tertiary">Image coming soon</p>
+                                    </div>
+                                )}
+                            </div>
+                        </FadeIn>
+                    </div>
+
                     {/* Content Side */}
-                    <div className={cn("w-full lg:w-1/2", align === "right" ? "lg:order-2" : "lg:order-1")}>
+                    <div className="w-full lg:w-1/2">
                         <FadeIn>
                             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-secondary mb-4">
                                 {title}
@@ -91,8 +107,8 @@ export function ServiceDetail({
                                     </div>
                                 </div>
 
-                                <div className="pt-4">
-                                    <p className="text-sm text-text-tertiary mb-4 font-medium uppercase tracking-wide">
+                                <div className="pt-4 flex justify-center">
+                                    <p className="text-sm text-text-tertiary mb-4 font-medium uppercase tracking-wide hidden">
                                         {pricing}
                                     </p>
                                     <Button
@@ -101,22 +117,6 @@ export function ServiceDetail({
                                         Book This Service <ArrowRight className="ml-2 h-4 w-4" />
                                     </Button>
                                 </div>
-                            </div>
-                        </FadeIn>
-                    </div>
-
-                    {/* Visual Side (Placeholder for now until images generated) */}
-                    <div className={cn("w-full lg:w-1/2 flex items-center justify-center", align === "right" ? "lg:order-1" : "lg:order-2")}>
-                        <FadeIn delay={0.2} className="w-full">
-                            <div className="relative aspect-square lg:aspect-[4/5] rounded-2xl overflow-hidden bg-secondary/5 border border-border shadow-lg flex items-center justify-center">
-                                {imageSrc ? (
-                                    <img src={imageSrc} alt={title} className="w-full h-full object-cover" />
-                                ) : (
-                                    <div className="text-center p-8">
-                                        <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto mb-4 animate-pulse" />
-                                        <p className="text-text-tertiary">Image coming soon</p>
-                                    </div>
-                                )}
                             </div>
                         </FadeIn>
                     </div>
