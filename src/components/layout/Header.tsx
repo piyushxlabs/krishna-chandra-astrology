@@ -100,24 +100,25 @@ export function Header() {
                 <div
                     className={cn(
                         "mx-auto max-w-7xl rounded-full transition-all duration-500",
-                        // Glass morphism styles
+                        // Enhanced glass morphism styles with better visibility
                         isScrolled
-                            ? "bg-[rgba(250,246,241,0.95)] backdrop-blur-[16px] shadow-[0_8px_32px_rgba(74,59,47,0.12)] border border-[rgba(232,213,183,0.5)]"
-                            : "bg-[rgba(250,246,241,0.85)] backdrop-blur-[10px] border border-[rgba(232,213,183,0.3)]",
+                            ? "bg-[rgba(250,246,241,0.98)] backdrop-blur-[16px] shadow-[0_4px_24px_rgba(74,59,47,0.12)] border border-[rgba(201,149,77,0.25)]"
+                            : "bg-[rgba(250,246,241,0.92)] backdrop-blur-[12px] shadow-[0_2px_16px_rgba(74,59,47,0.06)] border border-[rgba(232,213,183,0.4)]",
                         // Padding transition
                         isScrolled ? "px-6 py-2" : "px-8 py-3"
                     )}
                 >
                     <div className="flex items-center justify-between">
-                        {/* Logo - Left */}
+                        {/* Logo - Left with golden glow */}
                         <Link href="/" className="group flex items-center gap-2.5 flex-shrink-0" aria-label="Go to homepage">
                             <motion.div
                                 initial={{ rotate: 0 }}
                                 animate={{ rotate: 360 }}
                                 transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
-                                className="group-hover:rotate-[15deg] transition-transform duration-300"
+                                className="group-hover:rotate-[15deg] transition-all duration-300"
+                                style={{ filter: "drop-shadow(0 0 8px rgba(201,149,77,0.3))" }}
                             >
-                                <KundliIcon className="w-8 h-8 text-primary" />
+                                <KundliIcon className="w-8 h-8 text-primary group-hover:text-[#D4A563] transition-colors" />
                             </motion.div>
                             <span className="font-serif text-lg lg:text-xl font-bold text-secondary tracking-[-0.01em]">
                                 Pandit Krishna

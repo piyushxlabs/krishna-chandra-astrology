@@ -2,24 +2,25 @@ import { Metadata } from "next";
 import { blogPosts } from "@/data/blog-posts";
 import { BlogHero } from "@/components/blog/BlogHero";
 import { BlogListing } from "@/components/blog/BlogListing";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-    title: "Astrology Blog & Insights | Pandit Krishna Chandra Jaguri",
-    description:
-        "Explore articles on Vedic Astrology, Kundli Matching, Vastu Shastra, and Planetary Transits. Expert guidance for modern life problems.",
+    title: "Astrology Blog | Tips, Insights & Guidance | Pandit Krishna Chandra Jaguri",
+    description: "Vedic astrology tips, planetary movements, festival dates, life guidance and practical insights in Hinglish.",
+    openGraph: {
+        title: "Astrology Blog | Tips, Insights & Guidance | Pandit Krishna Chandra Jaguri",
+        description: "Vedic astrology tips, planetary movements, festival dates, life guidance and practical insights in Hinglish.",
+        url: "/blog",
+    },
+    alternates: {
+        canonical: "/blog",
+    },
 };
 
 export default function BlogPage() {
     return (
-        <>
-            <Header />
-            <main className="min-h-screen pt-20">
-                <BlogHero />
-                <BlogListing initialPosts={blogPosts} />
-            </main>
-            <Footer />
-        </>
+        <main className="min-h-screen">
+            <BlogHero />
+            <BlogListing initialPosts={blogPosts} />
+        </main>
     );
 }

@@ -19,7 +19,6 @@ export const NAVIGATION_LINKS = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Pandit Ji" },
     { href: "/services", label: "Services" },
-    { href: "/testimonials", label: "Testimonials" },
     { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
 ];

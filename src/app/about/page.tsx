@@ -1,29 +1,31 @@
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
+import { Metadata } from "next";
 import { IntroHero } from "@/components/sections/about/IntroHero";
 import { Journey } from "@/components/sections/about/Journey";
 import { Approach } from "@/components/sections/about/Approach";
 import { LocalTrust } from "@/components/sections/about/LocalTrust";
 import { CTASection } from "@/components/sections/about/CTASection";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About Pandit Ji | Krishna Chandra Jaguri",
-    description: "Learn about Pandit Krishna Chandra Jaguri's 10+ years of experience in Vedic Astrology.",
+    title: "About Pandit Krishna Chandra Jaguri | Vedic Astrologer Dehradun",
+    description: "Meet Pandit Krishna Chandra Jaguri — 10 years experience in Vedic astrology, serving Raiwala, Dehradun and nearby areas with trusted guidance.",
+    openGraph: {
+        title: "About Pandit Krishna Chandra Jaguri | Vedic Astrologer Dehradun",
+        description: "Meet Pandit Krishna Chandra Jaguri — 10 years experience in Vedic astrology, serving Raiwala, Dehradun and nearby areas with trusted guidance.",
+        url: "/about",
+    },
+    alternates: {
+        canonical: "/about",
+    },
 };
 
 export default function AboutPage() {
     return (
-        <>
-            <Header />
-            <main className="min-h-screen pt-20">
-                <IntroHero />
-                <Journey />
-                <Approach />
-                <LocalTrust />
-                <CTASection />
-            </main>
-            <Footer />
-        </>
+        <main className="min-h-screen">
+            <IntroHero />
+            <Journey />
+            <Approach />
+            <LocalTrust />
+            <CTASection />
+        </main>
     );
 }

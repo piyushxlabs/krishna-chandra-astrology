@@ -36,7 +36,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         title: `${post.title} | Pandit Krishna Chandra Jaguri`,
         description: post.excerpt,
         openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            type: "article",
+            publishedTime: post.date,
+            authors: ["Pandit Krishna Chandra Jaguri"],
             images: [post.image],
+        },
+        alternates: {
+            canonical: `/blog/${post.slug}`,
         },
     };
 }

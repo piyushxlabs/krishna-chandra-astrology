@@ -1,27 +1,29 @@
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
+import { Metadata } from "next";
 import { ContactIntro } from "@/components/sections/contact/ContactIntro";
 import { ContactMethods } from "@/components/sections/contact/ContactMethods";
 import { ContactForm } from "@/components/sections/contact/ContactForm";
 import { LocationInfo } from "@/components/sections/contact/LocationInfo";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Contact Us | Pandit Krishna Chandra Jaguri",
-    description: "Get in touch with Pandit Krishna Chandra Jaguri via Phone, WhatsApp or visit our office in Raiwala, Dehradun.",
+    title: "Contact Pandit Krishna Chandra Jaguri | Astrology Consultations Dehradun",
+    description: "WhatsApp, call, or message for astrology consultations. Based in Raiwala, Dehradun. 24-hour response guaranteed.",
+    openGraph: {
+        title: "Contact Pandit Krishna Chandra Jaguri | Astrology Consultations Dehradun",
+        description: "WhatsApp, call, or message for astrology consultations. Based in Raiwala, Dehradun. 24-hour response guaranteed.",
+        url: "/contact",
+    },
+    alternates: {
+        canonical: "/contact",
+    },
 };
 
 export default function ContactPage() {
     return (
-        <>
-            <Header />
-            <main className="min-h-screen pt-20">
-                <ContactIntro />
-                <ContactMethods />
-                <ContactForm />
-                <LocationInfo />
-            </main>
-            <Footer />
-        </>
+        <main className="min-h-screen">
+            <ContactIntro />
+            <ContactMethods />
+            <ContactForm />
+            <LocationInfo />
+        </main>
     );
 }

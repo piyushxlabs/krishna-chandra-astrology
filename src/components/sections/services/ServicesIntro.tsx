@@ -6,7 +6,7 @@ import { FadeIn } from "@/components/motion/FadeIn";
 
 export function ServicesIntro() {
     return (
-        <Section variant="dark" className="py-24">
+        <Section variant="dark" className="min-h-[500px] flex items-center pt-20">
             <Container className="text-center text-[#FAF6F1]">
                 <FadeIn>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6">

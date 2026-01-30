@@ -1,23 +1,68 @@
-import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils/cn";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import StructuredData from "@/components/StructuredData";
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
+  variable: "--font-playfair",
 });
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-});
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#C9954D",
+};
 
 export const metadata: Metadata = {
-  title: "Pandit Krishna Chandra Jaguri | Vedic Astrologer in Raiwala & Dehradun",
-  description: "Expert Vedic astrology services by Pandit Krishna Chandra Jaguri. 10+ years of experience in Janampatri, Kundli Analysis, and Personal Consultation.",
+  metadataBase: new URL("https://panditkrishnachandra.com"),
+  title: {
+    default: "Pandit Krishna Chandra Jaguri | Vedic Astrologer Dehradun",
+    template: "%s | Pandit Krishna Chandra Jaguri",
+  },
+  description:
+    "10+ years experience in Vedic astrology. Janampatri banana, analysis, personal consultations in Raiwala, Dehradun. Trusted local guidance.",
+  keywords: [
+    "astrologer Dehradun",
+    "janampatri Raiwala",
+    "Vedic astrology Uttarakhand",
+    "kundli matching",
+    "birth chart analysis",
+    "personal consultation astrologer",
+    "bhavishya prediction",
+    "astrologer near me Dehradun",
+  ],
+  authors: [{ name: "Pandit Krishna Chandra Jaguri" }],
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://panditkrishnachandra.com",
+    siteName: "Pandit Krishna Chandra Jaguri",
+    title: "Pandit Krishna Chandra Jaguri | Vedic Astrologer Dehradun",
+    description:
+      "10+ years experience in Vedic astrology. Janampatri banana, analysis, personal consultations in Raiwala, Dehradun. Trusted local guidance.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pandit Krishna Chandra Jaguri | Vedic Astrologer Dehradun",
+    description:
+      "10+ years experience in Vedic astrology. Janampatri banana, analysis, personal consultations in Raiwala, Dehradun. Trusted local guidance.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "https://panditkrishnachandra.com",
+  },
 };
 
 export default function RootLayout({
@@ -27,14 +72,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={cn(
-          "min-h-screen bg-[#FAF6F1] font-sans antialiased",
-          playfair.variable,
-          inter.variable
-        )}
-      >
+      <body className={`${inter.variable} ${playfair.variable} font-sans bg-[#FAF6F1] text-[#2D2520]`}>
+        <StructuredData type="organization" />
+        <StructuredData type="localBusiness" />
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
