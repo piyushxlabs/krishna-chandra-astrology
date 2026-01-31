@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Hero } from "@/components/sections/home/Hero";
+import { ScrollCinematicHero } from "@/components/sections/home/ScrollCinematicHero";
 import { TrustSignals } from "@/components/sections/home/TrustSignals";
 import { AboutIntro } from "@/components/sections/home/AboutIntro";
 import { ServicesOverview } from "@/components/sections/home/ServicesOverview";
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Hero />
+      <ScrollCinematicHero />
       <TrustSignals />
       <AboutIntro />
       <ServicesOverview />
